@@ -1,4 +1,4 @@
-package lec01.lec02.assignments;
+package lec02.assignments;
 
 public class FooCorporation {
     public static void main(String[] args) {
