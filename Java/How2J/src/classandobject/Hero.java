@@ -131,6 +131,9 @@ public class Hero {
 		garen.kill(c);*/
 		Hero h = null;
 		h.battleWin();
+
+		ADAPHero adap = new ADAPHero();
+		adap.attack();
 	}
 	
 }

@@ -1,6 +1,6 @@
 package classandobject;
 
-public class Item {
+public abstract class Item {
 	
 	String name;
 	int price;
@@ -24,6 +24,8 @@ public class Item {
 		}
 		return false;
 	}
+
+	public abstract boolean disposable();
 	
 	public static void main(String[] args) {
 		/*
@@ -52,7 +54,7 @@ public class Item {
 			h = new Item();
 		}
 		*/
-		Item h1 = new Item();
+		/*Item h1 = new Item();
 		h1.name = "²¼ÒÂ"; h1.price = 50;
 		Item h2 = new Item();
 		h2.name = "²¼ÒÂ"; h2.price = 50;
@@ -60,7 +62,16 @@ public class Item {
 		h3.name = "Ëø×Ó¼×"; h3.price = 150;
 		
 		System.out.println(h1.equals(h2));
-		System.out.println(h1.equals(h3));
+		System.out.println(h1.equals(h3));*/
+		Armor a = new Armor();
+		System.out.println(a.disposable());
+
+		Item i = new Item() {
+			public boolean disposable() {
+				return true;
+			}
+		};
+		System.out.println(i.disposable());
 	}
 
 }
