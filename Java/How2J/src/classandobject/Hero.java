@@ -121,14 +121,16 @@ public class Hero {
 	}
 	
 	public static void main(String[] args) {
-		Hero garen = new Hero();
-		Hero a = new ADHero();
-		Hero b = new APHero();
-		Hero c = new ADAPHero();
+		/*Hero garen = new Hero();
+		ADHero a = new ADHero();
+		APHero b = new APHero();
+		ADAPHero c = new ADAPHero();
 		
-		garen.kill((Mortal)a);
-		garen.kill((Mortal)b);
-		garen.kill((Mortal)c);
+		garen.kill(a);
+		garen.kill(b);
+		garen.kill(c);*/
+		Hero h = null;
+		h.battleWin();
 	}
 	
 }
